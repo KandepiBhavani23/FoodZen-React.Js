@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.background {
+		background: rgb(34, 193, 195);
+		background: radial-gradient(
+			circle,
+			rgba(34, 193, 195, 1) 0%,
+			rgba(230, 253, 45, 1) 100%
+		);
+	}
+
+	.search-border {
+		border: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+	}
+
+	@keyframes change {
+		0% {
+			background-image: url("/navbar/homeImage-1.jpg");
+		}
+		10% {
+			background-image: url("/navbar/homeImage-2.jpg");
+		}
+		20% {
+			background-image: url("/navbar/homeImage-3.jpg");
+		}
+		30% {
+			background-image: url("/navbar/homeImage-4.jpg");
+		}
+		40% {
+			background-image: url("/navbar/homeImage-5.jpg");
+		}
+		50% {
+			background-image: url("/navbar/homeImage-6.png");
+		}
+		60% {
+			background-image: url("/navbar/homeImage-7.jpg");
+		}
+		70% {
+			background-image: url("/navbar/homeImage-8.jpg");
+		}
+		80% {
+			background-image: url("/navbar/homeImage-9.jpg");
+		}
+		90% {
+			background-image: url("/navbar/homeImage-10.jpg");
+		}
+		100% {
+			background-image: url("/navbar/homeImage.png");
+		}
+	}
+
+	@keyframes move {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(30px);
+		}
+	}
+}
